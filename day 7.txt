@@ -1,0 +1,51 @@
+hakerearth
+
+1)Roy and Profile Picture
+:-
+L = int(input())
+N = int(input())
+
+for i in range(N):
+    W, H = map(int, input().split())
+
+    if W < L or H < L:
+        print("UPLOAD ANOTHER")
+    elif W == H:
+        print("ACCEPTED")
+    else:
+        print("CROP IT")
+
+
+2)Monk and Rotation
+:-
+T= int(input())
+
+for i in range(T):
+    N,K=map(int, input().split())
+    arr=list(map(int, input().split()))
+    K=K%N
+    arr=arr[-K:]+arr[:-K]
+    print(*arr)
+
+
+3)Toggle String
+:-
+S=input()
+r=""
+for ch in S:
+    if ch.islower():
+        r += ch.upper()
+    elif ch.isupper():
+        r += ch.lower()
+    else:
+        r += ch
+print(r)
+
+(ans second):-
+S=input()
+ans=S.swapcase()
+print(ans)
+
+
+4)
+:-
